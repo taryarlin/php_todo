@@ -30,7 +30,8 @@ $todos = $statement->fetchAll();
                     <td><?php echo $todo->description; ?></td>
 
                     <td>
-                        <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                        <a href="/edit.php?id=<?php echo $todo->id ?>"
+                            class="btn btn-warning btn-sm">Edit</a>
 
                         <a href="/delete.php?id=<?php echo $todo->id ?>"
                             class="btn btn-danger btn-sm">Delete</a>
