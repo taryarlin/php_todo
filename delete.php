@@ -15,6 +15,5 @@ $statement->execute([
     ':id' => $id,
 ]);
 
-
 header("location: /list.php");
 exit();
